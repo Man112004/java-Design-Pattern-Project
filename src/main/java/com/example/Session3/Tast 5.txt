@@ -1,0 +1,4 @@
+session.invalidate() immediately destroys the server-side session, so the user is logged out when they click Logout.
+With JWT, logout usually means removing the token from the client; the token remains valid until its expiry unless extra server-side revocation is implemented.
+session.invalidate() is server-controlled and easy to expire immediately, while JWT expiry is time-based and stateless.
+Both can manage login sessions in web apps like Myntra or Flipkart, but they use different approaches to storing and ending authentication.
