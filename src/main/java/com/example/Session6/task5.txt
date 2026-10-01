@@ -1,0 +1,18 @@
+Transactional Emails
+
+Sent because of a user's action.
+Zomato: Order confirmation email after placing an order.
+Flipkart: Order/shipping confirmation email after buying a product.
+
+Marketing Emails
+
+Sent to promote products, offers, or services.
+Zomato: Discount or food offer email.
+Flipkart: Festival sale or product offer email.
+
+
+JavaMail Difference
+Transactional: JavaMail sends the email immediately when an event happens, like placing an order.
+Marketing: JavaMail may send emails in bulk using a scheduled job or a list of customers.
+Transactional emails usually contain personal/order details.
+Marketing emails mainly contain offers, discounts, and promotions.
