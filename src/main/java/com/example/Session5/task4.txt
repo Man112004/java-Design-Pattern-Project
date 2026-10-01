@@ -1,0 +1,6 @@
+BLOB in Database: Stores the actual image inside the database. It is easy to keep images together with product data.
+BLOB Cons: Database size becomes very large, which can make backup and performance slower.
+File Path on Disk: Stores only the image location/path in the database. This keeps the database small and faster.
+File Path Cons: If an image file is deleted or moved, the saved path becomes invalid.
+For Flipkart-style gallery: File paths are generally better because products can have many large images and need fast loading.
+BLOB is useful: For small files or when strong database-level backup and transaction management for images is required.
